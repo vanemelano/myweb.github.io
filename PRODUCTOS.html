@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+    <html lang="es">
+
+        <head>
+
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-widht;initial-scale=1"/>
+            <meta name="Trabajo HTML" content="Página trabajo final módulo 1 masterD" />
+            <meta name="robots" content="NOFOLLOW" />
+            <meta name="Author" content="Vanesa" />
+            <meta name="keywords" content="Demo,Trabajo obligatorio HTML" />
+            <meta name="revisit-after" content="2 days" />
+            <meta name="category" content="Trabajo HTML-MasterD" />
+            <title>Productos</title>
+        <!-- Declaración de fichero de estilos -->
+            <link rel="stylesheet" type="text/css" href="CSS/STYLES.css">
+        <!--Declaración de íconos redes sociales-->
+            <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <!--Declaración de fuente de letra "Google Fonts"-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+
+        </head>
+
+        <body>
+            
+            <header class="header">
+
+        <!--Logo-->
+                <div class="contenedor-logo">
+                    <img src="IMG/logo.png" alt="Logo" class="logo">
+                </div>    
+        <!--Menú-->
+                <nav class="navegacion">
+                    <ul>
+                        <li><a href="INDEX.html">Inicio</a></li>
+                        <li><a href="PRODUCTOS.html">Productos</a></li>
+                        <li><a href="PRESUPUESTO.html">Presupuesto</a></li>
+                        <li><a href="CONTACTO.html">Contacto</a></li>
+                    </ul>
+                </nav>
+
+                <section class="texto-cabecera">
+                    <h1>Más de 15 años ofreciendo el mejor servicio</h1>
+                    <h2>Te mereces lo mejor</h2>
+                </section>
+            
+            </header>
+
+        <!--Creamos el Main donde colocaremos 4 columnas con cuatro contenedores con imágenes para la "Galería"-->          
+            <main>
+
+                <section class="contenedor">
+                    <h2 class="titulo">COMPRA CON CONFIANZA</h2>
+                        <div class="contenedor_galeria">
+                            <img src="IMG/galeria/movil.jpg" alt="" class="imagen">
+                            <img src="IMG/galeria/movil1.jpg" alt="" class="imagen">
+                            <img src="IMG/galeria/movil2.jpg" alt="" class="imagen">
+                            <img src="IMG/galeria/movil3.jpg" alt="" class="imagen">
+                            <img src="IMG/galeria/movil4.jpg" alt="" class="imagen">
+                            <img src="IMG/galeria/movil5.jpg" alt="" class="imagen">
+                            <img src="IMG/galeria/movil6.jpg" alt="" class="imagen">
+                            <img src="IMG/galeria/movil7.jpg" alt="" class="imagen">
+                            <img src="IMG/galeria/movil8.jpg" alt="" class="imagen">
+                            <img src="IMG/galeria/accesorio1.jpg" alt="" class="imagen">
+                            <img src="IMG/galeria/accesorio2.jpg" alt="" class="imagen">
+                            <img src="IMG/galeria/accesorio3.jpg" alt="" class="imagen">
+                            <img src="IMG/galeria/android.jpg" alt="" class="imagen">
+                            <img src="IMG/galeria/ios.jpg" alt="" class="imagen">
+                            <img src="IMG/galeria/cover.jpg" alt="" class="imagen">
+                            <img src="IMG/galeria/cover1.jpg" alt="" class="imagen">
+                            <img src="IMG/galeria/cover2.jpg" alt="" class="imagen">
+                            <img src="IMG/galeria/cover3.jpg" alt="" class="imagen">
+                            <img src="IMG/galeria/cover4.jpg" alt="" class="imagen">
+                            <img src="IMG/galeria/movilcafe.jpg" alt="" class="imagen">
+                            <img src="IMG/galeria/movilmujer.jpg" alt="" class="imagen">
+                        </div>          
+                </section>
+
+            </main>
+
+            <footer>
+
+                <div class="contenido-footer">
+                    <div>
+                        <h4><i class='bx bxs-map' style='color:#fffefe' ></i> UBICACIÓN </h4>
+                        <p>Calle Santo Tomé 3568</p>
+                        <p id="ubicacion">Sevilla-España</p>
+                    </div>
+                    <div >
+                        <h4>LEGALES</h4>
+                        <p>Términos de uso</p>
+                        <p>Política de privacidad</p>
+                        <p>Política de cookies</p>
+                    </div>
+                    <div >
+                        <h4>REDES SOCIALES</h4>
+                        <i class='bx bxl-twitter bx-tada' style='color:#fbf9f9' ></i>
+                        <i class='bx bxl-facebook-circle bx-tada' style='color:#fbf9f9' ></i>
+                        <i class='bx bxl-instagram-alt bx-tada' style='color:#fbf9f9' ></i>
+                    </div>
+                </div>
+
+            </footer>
+
+        </body>
+
+    </html>
+
+
+        <!--FIN-->
+
+        .contenedor-imagenes{
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .imagenes {
+            margin: auto;
+            padding:20px;
+            width: 350px;
+            height: 250px;
+            object-fit:cover ;
+             transition: .2s linear;cursor: pointer;
+            filter: brightness(70%);
+          }
+        
+          .imagenes:hover {
+            filter: brightness(100%);
+        
+          }
+
+         
+
+          transform: scale(1.1);

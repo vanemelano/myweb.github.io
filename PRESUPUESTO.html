@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+    <html lang="es">
+
+        <head>
+
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-widht;initial-scale=1"/>
+            <meta name="Trabajo HTML" content="Página trabajo final módulo 1 masterD" />
+            <meta name="robots" content="NOFOLLOW" />
+            <meta name="Author" content="Vanesa" />
+            <meta name="keywords" content="Demo,Trabajo obligatorio HTML" />
+            <meta name="revisit-after" content="2 days" />
+            <meta name="category" content="Trabajo HTML-MasterD" />
+            <title>Inicio - Sitio Web</title>
+        <!-- Declaración de fichero de estilos -->
+            <link rel="stylesheet" type="text/css" href="CSS/STYLES.css">
+        <!--Declaración de íconos redes sociales-->
+            <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <!--Declaración de fuente de letra "Google Fonts"-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+
+        </head>
+
+        <body>
+
+            <header class="header">
+
+        <!--Logo-->
+                <div class="contenedor-logo">
+                    <img src="IMG/logo.png" alt="Logo" class="logo">
+                </div>            
+        <!--Menú-->
+                <nav class="navegacion">
+                    <ul>
+                        <li><a href="INDEX.html">Inicio</a></li>
+                        <li><a href="PRODUCTOS.html">Productos</a></li>
+                        <li><a href="PRESUPUESTO.html">Presupuesto</a></li>
+                        <li><a href="CONTACTO.html">Contacto</a></li>
+                    </ul>
+                </nav>
+        
+                <section class="texto-cabecera">
+                    <h1>Más de 15 años ofreciendo el mejor servicio</h1><br>
+                    <h2>Te mereces lo mejor</h2>
+                </section>
+
+            </header>
+
+            <main>
+
+                <section class= "contenedor">
+                    <h2 class="titulo"> PRESUPUESTOS</h2>
+
+        <!--Div que contiene formulario de presupuestos-->
+                        <div class= "contenedor_formulario">
+                            <form name="my_form" id="my_form" method="post" onsubmit="return formulario () ">
+                                <h3>Solicite su presupuesto:</h3>
+
+                                <div>
+                                    <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" pattern="[A-Z a-z]{5,30}" title="Escriba sólo letras entre 5 y 30 carácteres" required> 
+                                </div>
+
+                                <div>
+                                    <input type="email" id="email" name="email" placeholder="Correo electrónico" required >
+                                </div>
+
+                                <div>
+                                    <input type="tel" id="telefono" name="telefono" placeholder="Número de teléfono" required>
+                                </div>
+
+                                <div>
+                                    <textarea name="mensaje" placeholder="Solicite más información..." required></textarea>
+                                </div>
+            <!--Checkbox-->
+                                <div class="contenedor_casilla">
+                                    <input type="checkbox" name="casilla" id="casilla" value="si" checked>
+                                    <label for="casilla" id="label">Acepta política de privacidad</label>
+                                </div>
+
+                                <div>
+                                    <input type="submit" name="boton" value="Enviar" class="boton_enviar" onclick="validar(this.form);return false" />
+                                </div>
+
+                            </form>
+                        </div>
+
+                </section>
+
+            </main>
+
+            <footer>
+
+                <div class="contenido-footer">
+                    <div>
+                        <h4><i class='bx bxs-map' style='color:#fffefe' ></i> UBICACIÓN </h4>
+                        <p>Calle Santo Tomé 3568</p>
+                        <p id="ubicacion">Sevilla-España</p>
+                    </div>
+                    <div >
+                        <h4>LEGALES</h4>
+                        <p>Términos de uso</p>
+                        <p>Política de privacidad</p>
+                        <p>Política de cookies</p>
+                    </div>
+                    <div >
+                        <h4>REDES SOCIALES</h4>
+                        <i class='bx bxl-twitter bx-tada' style='color:#fbf9f9' ></i>
+                        <i class='bx bxl-facebook-circle bx-tada' style='color:#fbf9f9' ></i>
+                        <i class='bx bxl-instagram-alt bx-tada' style='color:#fbf9f9' ></i>
+                    </div>
+                </div>
+
+            </footer>
+
+        </body>
+
+    </html>
+
+        <!--FIN-->

@@ -1,0 +1,544 @@
+/*Estilo general para todos los ficheros de la web*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+body {
+    font-family: 'Gruppo', cursive;
+}
+
+/*Menú*/
+
+.navegacion {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+.navegacion ul li {
+    display: inline-block;
+}
+
+.navegacion ul li a {
+    color: white;
+    font-weight: 300px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 4px 6px;
+    border:0.5px solid #fff;
+}
+
+.titulo {
+    color: #868383;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-bottom: 60px;
+}
+
+/*Logo -ubicado dentro del menú*/
+
+.contenedor-logo {
+    display: flex;    
+    justify-content:space-evenly;
+    margin: 20px 0px 0 60px;
+    position: relative;
+    float: left;
+}
+
+.logo{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: ease-in;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+
+}
+ 
+.logo:hover {
+    height:200px;
+    width: 200px;
+    margin-left: -50px;
+}
+
+/*Header*/
+
+.header {
+    width: 100%;
+    height: 400px;
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(246, 79, 90, 0.603), rgba(196, 113, 237, 0.603), rgba(18, 194, 233, 0.603)), url(../IMG/imagen2a.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.texto-cabecera {
+    height: 430px;
+    width:100%;
+    margin-top: 45px;
+    display:inline-table;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .texto-cabecera h1 {
+    font-size: 45px;
+    color: #fff;
+    letter-spacing: 5px;    
+  }
+
+  .texto-cabecera h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 5px; 
+}
+
+/*Main*/
+
+.contenedor {
+    padding: 60px 0px;
+    width: 90%;
+    max-width: 1000px;
+    margin:auto;
+    overflow: hidden;
+}
+
+ /*Footer*/
+
+ footer {
+    background: #868383;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenido-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 65px;
+}
+
+.contenido-footer {
+    text-align: center;
+}
+
+.contenido-footer h4 {
+    color:#fbf9f9 ;  
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 0.5px solid rgba(18, 194, 233, 0.733);
+}
+
+ #ubicacion {
+    color:#fbf9f9;
+    margin-bottom: 0;
+    font-size: 14px;   
+    text-align: center;
+ }
+
+.contenido-footer p {
+    color:#fbf9f9;
+    margin-bottom: 0;
+    font-size: 14px;   
+    text-align: left
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+/*Fichero "Index" */
+
+/*Section "Acerca de nosotros"*/
+
+.sobre-nosotros {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 45px;
+    padding:30px 0;
+}
+
+.ima-nosotros {
+    width: 50%;
+}
+
+.sobre-nosotros .contenido-textos {
+    width: 50%;
+}
+
+.contenido-textos h3 {
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    color: #4d0686;
+}
+
+.contenido-textos h3 span {
+    background:#4d0686;
+    color: #12c2e9;
+    font-size: 25px;
+    border-radius: 50%;
+    padding: 2px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    box-shadow: 0 0 6px 0 rgba(0,0 ,0 ,.5 alpha);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0 0 25px 10px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+/*Section "Nuestros productos y servicios"*/
+
+.productos {
+    background: #f0eded;
+    padding:40px 40px 80px 60px;
+}
+
+.titulo-productos {
+    color: #4d0686;
+    letter-spacing: 5px;   
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.galeria-prod {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.figure1 {
+    float: left;
+    margin-right: 40px;
+}
+
+.Figure2 {
+    float: right;
+}
+
+.galeria-prod figure {
+    position: relative;
+    height: 350px;
+    width: 600px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.galeria-prod figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+    
+.galeria-prod figure .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(196, 113, 237, 0.4);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.galeria-prod figure:hover > .capa {
+    opacity: 1;
+    visibility: visible
+}
+
+galeria-prod figure:hover > .capa h3 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.galeria-prod figure .capa  h3 {
+    color: #fff;
+    font-size: 60px;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+    transition: all 500ms ease-out;
+    margin-top: 25px;
+}
+
+.galeria-prod figure .capa  h2{
+    color: #fff;
+    font: size 50px;
+    letter-spacing: 5px;
+    transition: all 500ms ease-out;
+    margin: 15px 150px;
+    padding:10px 30px;
+    border: 0.2px solid #fff;
+
+}
+
+.galeria-prod figure .capa p {
+    color:#fff;
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin:auto;
+}
+
+
+/*Section "Nuestros clientes"*/
+
+.cards {
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 60px;
+    padding: 0 20px;
+}
+
+.cards .card {
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.cards .card {
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(246, 79, 90, 0.603), rgba(196, 113, 237, 0.603), rgba(18, 194, 233, 0.603)), url(../IMG/imagen2a.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex; 
+}
+
+.cards .card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card {
+    width: 60%;
+    color:#fff;
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding-top: 50px;
+   }
+
+   /*-------------------------------------------------------------------------------------*/
+
+   /*Fichero galería "PRODUCTOS" */
+
+.contenedor_galeria {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 0 120px 0;
+}
+
+.imagen {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 38px;
+    object-fit: cover;
+    filter: brightness(50%);
+    animation: escalar 2s infinite alternate;
+    cursor:pointer;
+    border: 0.5px solid #c9c3c3;
+}
+@keyframes escalar {
+    to {
+        transform: scale(1.05);
+    }
+}
+
+.imagen:hover {
+    filter: brightness(100%);
+  
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+/*Fichero "PRESUPUESTO"*/
+
+.contenedor_formulario {
+    margin: auto;
+    padding: 30px 0;
+}
+
+
+form {
+    background: #12c2e9;  /*Alternativa para navegadores antiguos */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(246, 79, 90, 0.603), rgba(196, 113, 237, 0.603), rgba(18, 194, 233, 0.603)), url(../IMG/imagen2a.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    width: 600px;
+    height: 550px;
+    margin:auto;
+    padding: 30px 25px;
+    box-sizing:border-box;
+    border-radius: 15px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+h3 {
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 0 0 25px 0;
+    font-size: 30px;
+    
+}
+
+input, textarea {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    padding: 7px;
+    box-sizing:border-box;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+/*Checkbox*/
+
+.contenedor_casilla {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 60px;
+    margin:0;
+    padding-top: 20px;
+}
+
+#label {
+        display: block;
+       margin-left: 25px;
+}
+
+#casilla {
+    width: 13px;
+    height: 26px;
+    padding:0;
+    margin: 0;
+    vertical-align: bottom;
+    position: relative;
+    overflow: hidden;
+}
+
+/*Estilos del botón "enviar"*/
+
+.boton_enviar {
+   background:#b4b1b1 ;
+    margin-top: 40px;
+    width: 100%;
+    height: 40px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+    color: #fff;  
+    font-size: 18px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+ 
+@media (max-width:480px) {
+    form {
+        width: 100%;
+    }
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+/* Fichero "contacto" */
+
+.section_contacto {
+    margin:auto;
+    padding:60px 20px 30px 20px;
+}
+
+.info_empresa {
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(246, 79, 90, 0.603), rgba(196, 113, 237, 0.603), rgba(18, 194, 233, 0.603)), url(../IMG/imagen2a.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 18px;
+    color:#fff;
+    width: 45%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+    padding: 30px 40px;
+    float: left;
+}
+
+.email_contacto {
+    color: #4d0686;
+
+    text-decoration: none;
+}
+
+.email_contacto:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.texto_contacto {
+    text-align: left;
+}
+
+.mapa {
+    width: 45%;
+    height: auto;
+    overflow: hidden;
+    float: right;
+    border-radius: 15px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+    margin-bottom: 60px;
+}
+
+/*FIN*/
+
+
+
+
+
+
+ 
+
